@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Saguitech</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+<body>
+   <h1>Desafio Saguitech</h1>
+    <form id="form">
+        <div>
+            <h2>Valor da venda</h2>
+            <input type="number" min="1" id="valor-venda" required>
+        </div>
+        <div>
+            <h2>Itens que estão sendo vendidos</h2>
+            <input type="text" id="itens" required>
+        </div>
+        <div>
+            <h2>Porcentagem do imposto (IRPF)</h2>
+            <input type="number" min="1" id="irpf" required>
+        </div>
+        <div>
+            <h2>Porcentagem do imposto (PIS)</h2>
+            <input type="number" min="1" id="pis" required>
+        </div>
+        <div>
+            <h2>Porcentagem do imposto (COFINS)</h2>
+            <input type="number" min="1" id="cofins" required>
+        </div>
+        <div>
+            <h2>Porcentagem do imposto (INSS)</h2>
+            <input type="number" min="1" id="inss" required>
+        </div>
+            <h2>Porcentagem do imposto (ISSQN)</h2>
+            <input type="number" min="1" id="issqn" required>
+        </div>
+        <div>
+            <input type="submit" id="button" value="Confirmar">
+        </div>
+    </form>
+    <div id="nota-fiscal">
+        <h2>Nota Fiscal de Serviço (NFS-e)</h2>
+        <p id="nota-valor"><strong></strong></p>
+        <p id="nota-itens"></p>
+        <p id="nota-irpf"><strong></strong></p>
+        <p id="subtotal1"></p>
+        <p id="nota-pis"><strong></strong></p>
+        <p id="subtotal2"></p>
+        <p id="nota-cofins"><strong></strong></p>
+        <p id="subtotal3"></p>
+        <p id="nota-inss"><strong></strong></p>
+        <p id="subtotal4"></p>
+        <p id="nota-issqn"><strong></strong></p>
+        <p id="subtotal5"></p>
+        <h2 id="resultado">Valor final após imposto R$ </h2>
+        <button id="novo-calculo">Realizar um novo cálculo</button>
+    </div>
+    
+    <script src="desafioService.js" type="module" ></script>
+</body>
+</html>
